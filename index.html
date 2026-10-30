@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوسف محمد موسى | Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { display: flex; min-height: 100vh; background-color: #f8f9fa; color: #333; }
+        
+        /* القسم الأيمن (البيانات الشخصية) */
+        .sidebar { width: 35%; background-color: #1e293b; color: white; padding: 60px 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        
+        .sidebar h1 { font-size: 2.2em; margin-bottom: 10px; color: #f8fafc; }
+        .sidebar h2 { font-size: 1.2em; font-weight: normal; color: #94a3b8; margin-bottom: 25px; }
+        .sidebar .info { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; width: 100%; border: 1px solid rgba(255,255,255,0.1); }
+        .sidebar .info p { margin: 8px 0; font-size: 1em; color: #cbd5e1; line-height: 1.6; }
+        
+        /* القسم الأيسر (المشاريع والتاسكات) */
+        .main-content { width: 65%; padding: 60px 50px; overflow-y: auto; }
+        .main-content h3 { font-size: 1.8em; color: #0f172a; margin-bottom: 30px; border-bottom: 3px solid #3b82f6; display: inline-block; padding-bottom: 10px; }
+        .empty-state { color: #64748b; font-size: 1.1em; font-style: italic; }
+        
+        /* توافق الشاشات الصغيرة (الموبايل) */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar, .main-content { width: 100%; }
+            .sidebar { padding: 40px 20px; }
+            .main-content { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- قسم البيانات (يمين) -->
+    <div class="sidebar">
+        <h1>يوسف محمد موسى</h1>
+        <h2>طالب هندسة برمجيات</h2>
+        
+        <div class="info">
+            <p>كلية الحاسبات والمعلومات</p>
+            <p>جامعة قناة السويس (الإسماعيلية)</p>
+        </div>
+    </div>
+
+    <!-- قسم المشاريع (يسار) -->
+    <div class="main-content">
+        <h3>التكليفات والمشاريع العملية</h3>
+        <p class="empty-state">سيتم إضافة التكليفات والمشاريع العملية هنا قريباً.</p>
+    </div>
+
+</body>
+</html>
